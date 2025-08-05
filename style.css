@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #bc8aca9e;
+  font-family: "Libertinus Serif", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 16px;
+  color: #c07070;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+button {
+  background: #177d9c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 0 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #7ac2eb;
+}
+
+.barscontainer {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-top: 2px solid #eee;
+  padding: 10px 0 0 0;
+}
+
+.bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 50); /* Fit 50 bars without scrolling */
+}
+
+.bar {
+  width: 80%;
+  background: #6e65b2;
+  transition: height 0.3s ease, background 0.3s ease;
+  border-radius: 4px 4px 0 0;
+}
+
+.bar-label {
+  margin-top: 4px;
+  font-size: 11px;
+  color: #333;
+  font-weight:bold;
+}
+
+.bar.comparing {
+  background: #915343;
+}
+
+.bar.swapped {
+  background: #74ead2;
+}
